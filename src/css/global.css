@@ -1,0 +1,310 @@
+.links :first-child{
+    border-left-style: solid;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.links :last-child{
+    border-right-style: solid;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.great{
+    background-color: #e7ecff;
+}
+
+.excerpt .edit-button{
+    visibility: hidden;
+}
+
+.excerpt:hover .edit-button, 
+.excerpt:focus .edit-button{
+    visibility: visible;
+}
+
+body::-webkit-scrollbar{
+    width: 2px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(73, 73, 73);
+}
+
+.edit-shadow{
+    box-shadow: 8px 8px 16px rgba(92, 92, 92, 0.74);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(42, 10, 129, 0.384) ;
+    background-color: rgba(42, 10, 129, 0.39) ;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(26, 0, 97);
+    border-radius: 1.5px;
+  }
+  body::-webkit-scrollbar:hover {
+    background-color: rgba(42, 10, 129, 0.575) !important;
+  }
+
+  textarea::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+  textarea::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(7, 7, 7, 0.384) ;
+    background-color: rgba(3, 3, 3, 0.068);
+    border-radius: 2px;
+  }
+  
+  textarea::-webkit-scrollbar-thumb {
+    background-color: rgba(39, 0, 145, 0.473);
+    border-radius: 1.5px;
+  }
+  textarea::-webkit-scrollbar:hover {
+    background-color: rgba(0, 0, 0, 0.575) !important;
+  }
+
+  .well{
+    box-shadow: inset 0 0 3px 0 rgba(7, 7, 7, 0.486) ;
+  }
+
+  .project-hover:hover .adjacent{
+    @layer hidden
+  }
+  .adjacent{
+    @layer hidden
+  }
+
+  ::selection{
+    background-color: rgb(49 46 129);
+    color:rgb(202, 194, 224);
+    padding: 3px;
+  }
+
+  .indigo-bg ::selection{
+    color: rgb(29, 21, 255);
+    background-color:rgb(199, 179, 255);
+    padding: 3px;
+  }
+
+  ::-ms-tooltip{
+    padding: 4px;
+    border: 1px;
+    border-style: solid;
+    border-radius: 2px;
+  }
+
+  ::grammar-error{
+    height: 1px;
+  }
+
+  
+  .skill .skill-icon{
+    @apply text-slate-200
+  }
+
+  .skill:hover .skill-icon{
+    @apply text-slate-50
+  }
+
+  .skill:hover .skill-foreground{
+    @apply hover:text-indigo-900
+  }
+
+  .skill.foreground{
+    @apply text-gray-800
+  }
+  
+
+  .skills-cloud{
+    background-image: url('/team-04.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .skill-icon{
+    transition:cubic-bezier(0.19, 1, 0.22, 1);
+    transition-duration: 1000;
+    transition-timing-function: ease-in-out;
+  }
+
+  .banner-text{
+    text-shadow: 2px 2px 4px rgb(49 46 129);
+  }
+  .banner-thumbnail{
+    box-shadow: 4px 4px 16px rgb(49 46 129);
+  }
+
+  .contact-item:hover .contact-item-icon{
+    @apply text-indigo-700
+  }
+  .contact-item:hover{
+    @apply cursor-text
+  }
+
+  /* The device with borders */
+.tablet {
+  position: relative;
+  width: 768px;
+  height: 1024px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+}
+
+/* The horizontal line on the top of the device */
+.tablet:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.tablet:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.tablet .content {
+  width: 768px;
+  height: 1024px;
+  background: white;
+  margin: -1px;
+}
+
+
+/* The laptop with borders */
+.laptop {
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scale(.6) translate(-50%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
+  transform: scale(.6) translate(-50%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
+  left: 50%;
+  position: absolute;
+  width: 1366px;
+  height: 800px;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: black;
+  border-width: 24px 24px 80px;
+  background-color: black;
+
+}
+
+/* The keyboard of the laptop */
+.laptop:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1600px;
+  height: 60px;
+  margin: 80px 0 0 -110px;
+  background: black;
+  border-radius: 6px;
+}
+
+/* The top of the keyboard */
+.laptop:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 250px;
+  height: 30px;
+  bottom: -110px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+  background: #f1f1f1;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 1;
+}
+
+/* The screen (or content) of the device */
+.laptop .content {
+  width: 1366px;
+  height: 800px;
+  overflow: hidden;
+  border: none;
+}
+
+/* The device with borders */
+.smartphone {
+  position: relative;
+  height: 640px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+}
+
+/* The horizontal line on the top of the device */
+.smartphone:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.smartphone:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.smartphone .content {
+  width: 460px;
+  height: 640px;
+  background: white;
+}
+
+
+
+
+
+ 
+  
+
+

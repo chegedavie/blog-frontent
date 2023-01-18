@@ -8,4 +8,12 @@ const axios = Axios.create({
     withCredentials: true,
 })
 
+export const options = {
+    baseURL: process.env.NEXT_PUBLIC_BACKEND_URL,
+    headers: {
+        'X-Requested-With': 'XMLHttpRequest',
+    },
+    withCredentials: true,
+}
+
 export default axios

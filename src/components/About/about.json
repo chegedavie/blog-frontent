@@ -1,0 +1,7 @@
+{
+    "summary":"My name is David Chege. I am from Nakuru, one of the most populous counties in Kenya. My parents had four children and I'm the third between two sisters and a brother. Apart from coding, I collect music which I mostly play on low volume as I code. I also do a litle gardening and home workouts (occasionally). Twenty seven and single, I am still searching for the one. Currently I am looking for a job as web a developer.",
+    "interests":{"title":"interests","data":["Software development","Web design","Audio transcription","Captioning","E-commerce","Digital marketing"]},
+    "hobbies":{"title":"hobbies","data":["Listening to music","Hiking","Watching movies","Home workouts","Breaking and fixing stuff","Carpentry"]},
+    "education":{"title":"education","summary":"I am a self-taught developer looking for a break into the industry. My resources are mainly Free Code Camp and Youtube (e.g Web Dev Simplified) and currently Hackerank. I have been doing this as a hobby for quite some time but I decided to make it into a career around October, 2022. In the beggining I played with Python for a bit, then learnt PHP which I planned to use to  create a transcription service website which I'm still developing. You can check out my Github to see some of my work."},
+    "github_profile":"https://github.com/chegedavie"
+}

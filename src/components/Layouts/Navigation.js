@@ -1,7 +1,7 @@
 import ApplicationLogo from '@/components/ApplicationLogo'
 import Dropdown from '@/components/Dropdown'
 import Link from 'next/link'
-import NavLink from '@/components/NavLink'
+import NavLink from '@/components/subNavLink'
 import ResponsiveNavLink, {
     ResponsiveNavButton,
 } from '@/components/ResponsiveNavLink'
@@ -32,10 +32,11 @@ const Navigation = ({ user }) => {
 
                         {/* Navigation Links */}
                         <div className="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                            <NavLink
-                                href="/dashboard"
-                                active={router.pathname === '/dashboard'}>
+                            <NavLink href="/dashboard">
                                 Dashboard
+                            </NavLink>
+                            <NavLink href="/blog">
+                                Blogs
                             </NavLink>
                         </div>
                     </div>
@@ -74,7 +75,10 @@ const Navigation = ({ user }) => {
                     <div className="-mr-2 flex items-center sm:hidden">
                         <button
                             onClick={() => setOpen(open => !open)}
-                            className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+                            className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+                            aria-roledescription='opens navigation menu'
+                            aria-controls='navigation-menu'
+                            name='menu-button'>
                             <svg
                                 className="h-6 w-6"
                                 stroke="currentColor"
@@ -105,12 +109,15 @@ const Navigation = ({ user }) => {
 
             {/* Responsive Navigation Menu */}
             {open && (
-                <div className="block sm:hidden">
+                <div className="block sm:hidden" id='navigation-menu' aria-expanded={true}>
                     <div className="pt-2 pb-3 space-y-1">
                         <ResponsiveNavLink
-                            href="/dashboard"
-                            active={router.pathname === '/dashboard'}>
+                            href="/dashboard">
                             Dashboard
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink
+                            href="/blog">
+                            Blogs
                         </ResponsiveNavLink>
                     </div>
 

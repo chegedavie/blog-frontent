@@ -1,0 +1,67 @@
+[
+  {
+    "title": "Blog",
+    "description": "This is my personal website where I showcase my work as well as share a few tricks and code snippets. I wanted a way to create a post with markdown and provide a way to copy code from the post.",
+    "techStack": [
+      "React JS",
+      "React-Redux",
+      "HTML5",
+      "Javascript",
+      "Tailwind CSS",
+      "Laravel"
+    ],
+    "implementation": "The backend is a Laravel Sanctum API and the frontend is a React App built on Next Js. I have used Tailwind CSS as it's perfect for a one-man team.",
+    "videoPath": "",
+    "screenShots": [],
+    "features":["Blog","Minimalist admin panel","Comment Section", "Authentication","Like Comments","Applaud Comment","Portfolio","Contact Us","Resume/About me"],
+	"github":"https://github.com/chegedavie/blog-frontent.git",
+	"demo":{
+		"complete":true,
+		"link":""
+	}
+
+  },
+  {
+    "title": "Online captions editor",
+    "description": "This is a captions editor that allows a user to upload caption files and edit them online or create new transcripts entirely. As it is designed for in-house use, there is not video/audio upload.",
+    "techStack": ["Javascript", "HTML5", "Tailwind CSS", "Wavesurfer JS"],
+    "implementation": "The media manipulation and waveform creation is done using wavesurfer JS. Alpine Js is used to present captions data. Tailwind CSS for styling.",
+    "videoPath": "/projects/editor.webm",
+    "screenShots": ["subtitles1.png","subtitles2.png","subtitles3.png","subtitles4.png","subtitles5.png","subtitles6.png"],
+    "features":["Create captions","Import captions","Export Captions","Wave form","Last edit","Delete (one or many)","Insert (before and after)","Most Edit functionalities","Context menu"],
+	"github":"https://github.com/chegedavie/captions-editor",
+	"demo":{
+		"complete":true,
+		"link":""
+	}
+  },
+  {
+    "title": "Project wizard",
+    "description": "This is a small application that enables a user to create a transcription/captioning project giving deadlines and and instructions on formating among. Users can drag and drop files or enter a URL.",
+    "techStack": ["Javascript", "Alpine JS", "Tailwind CSS", "HTML5"],
+    "implementation": "This application relies on a linked list to add and remove the files and URLs. Alpine JS is used to presend the data and Tailwind CSS for styling.",
+    "videoPath": "/projects/project-wizard.webm",
+    "screenShots": ["wizard-home.png","files-added.png","files-uploaded.png","link-added.png","grouped-files.png","files-details-added.png","projects-preview.png"],
+    "features":["Drag and drop files","Select files from device","Add file urls","Group files into a projeject","Ungroup grouped files","Add & edit project details","Preview projects"],
+	"github":"https://github.com/chegedavie/upload-wizard",
+	"demo":{
+		"complete":true,
+		"link":""
+	}
+  },
+  {
+    "title": "Shopeet",
+    "description": "This is an upcoming e-commerce project. Just a simple shop that sells electronic gadgets. It uses Stripe  for checkout. COMING SOON.",
+    "techStack": ["React JS", "Javascript", "HTML5", "Tailwind CSS"],
+    "implementation": "It's built React on NextJS and RTK Query to save and persist data. Tailwind CSS is also used for styling.",
+    "videoPath": "",
+    "screenShots": [],
+    "features":['shopping cart','shopping filters','checkout','authentication'],
+	"github":"https://github.com/chegedavie/shopeet",
+	"demo":{
+		"complete":false,
+		"link":""
+	}
+
+  }
+]
