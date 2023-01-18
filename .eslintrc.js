@@ -17,6 +17,7 @@ module.exports = {
             jsx: true,
         },
         ecmaVersion: 2020,
+requireConfigFile: false,
     },
     plugins: ['react', '@next/eslint-plugin-next', 'prettier'],
     rules: {
