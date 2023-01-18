@@ -39,6 +39,6 @@ requireConfigFile: false,
         'react/react-in-jsx-scope': 0,
         'linebreak-style': ['error', 'unix'],
         semi: ['error', 'never'],
-        'prettier/prettier': ['error', { "endOfLine": "off" }, { usePrettierrc: true }],
+        'prettier/prettier': ['error', { "endOfLine": "auto" }, { usePrettierrc: true }],
     },
 }
