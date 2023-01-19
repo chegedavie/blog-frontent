@@ -56,7 +56,7 @@
     "implementation": "It's built React on NextJS and RTK Query to save and persist data. Tailwind CSS is also used for styling.",
     "videoPath": "",
     "screenShots": [],
-    "features":['shopping cart','shopping filters','checkout','authentication'],
+    "features":["shopping cart","shopping filters","checkout","authentication"],
 	"github":"https://github.com/chegedavie/shopeet",
 	"demo":{
 		"complete":false,
