@@ -1,6 +1,6 @@
 module.exports = {
     root: true,
-    parser: '@babel/eslint-parser',
+    parser: 'babel-eslint',
     env: {
         node: true,
         browser: true,
@@ -16,8 +16,7 @@ module.exports = {
         ecmaFeatures: {
             jsx: true,
         },
-        ecmaVersion: 2020,
-requireConfigFile: false, 
+        ecmaVersion: 2020,  
     },
     plugins: ['react', '@next/eslint-plugin-next', 'prettier'],
     rules: {
