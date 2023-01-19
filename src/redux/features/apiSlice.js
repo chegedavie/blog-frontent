@@ -20,7 +20,7 @@ const getCookie = name => {
 export async function getCsrfToken () {
     // Make a request to your server to retrieve the CSRF token
     !getCookie('XSRF-TOKEN')
-        ? await fetch('http://localhost:8000/sanctum/csrf-cookie')
+        ? await fetch(process.env.NEXT_PUBLIC_BACKEND_URL+'sanctum/csrf-cookie')
         : null
     // Extract the CSRF token from the response
     const csrfToken = getCookie('XSRF-TOKEN')
@@ -32,7 +32,7 @@ export const apiSlice = createApi({
     reducerPath: 'api',
 
     baseQuery: fetchBaseQuery({
-        baseUrl: 'http://localhost:8000/api',
+        baseUrl: process.env.NEXT_PUBLIC_BACKEND_URL,
         credentials: 'include',
         prepareHeaders: async headers => {
             const { csrfToken } = await getCsrfToken()
