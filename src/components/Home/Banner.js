@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import CustomLink from '../customLink'
 import { faStar, faUserGraduate } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import SocialsCloud from '../SocialsCloud'
 import LinkButton from '../LinkButton'
 import Link from 'next/link'
