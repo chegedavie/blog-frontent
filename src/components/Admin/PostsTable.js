@@ -10,8 +10,8 @@ import {
     faTrash,
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import PublishedToggle from './publishedToggle'
-import FeatureToggle from './featureToggle'
+import PublishedToggle from './PublishedToggle'
+import FeatureToggle from './FeatureToggle'
 import { MDEPreview } from '@/components/Blog/MDEditor'
 import Link from 'next/link'
 

@@ -1,5 +1,5 @@
 import Input from "../textInput";
-import Textarea from "../TextArea";
+import Textarea from "../Textarea";
 import { useState } from "react";
 import { useSendMessageMutation } from "@/redux/features/apiSlice";
 import {CircleLoader} from 'react-spinners'
