@@ -19,9 +19,7 @@ const getCookie = name => {
 
 export async function getCsrfToken () {
     // Make a request to your server to retrieve the CSRF token
-    !getCookie('XSRF-TOKEN')
-        ? await fetch(process.env.NEXT_PUBLIC_BACKEND_URL+'sanctum/csrf-cookie')
-        : null
+await fetch(process.env.NEXT_PUBLIC_BACKEND_URL+'sanctum/csrf-cookie')
     // Extract the CSRF token from the response
     const csrfToken = getCookie('XSRF-TOKEN')
     // Return the CSRF token as a string
