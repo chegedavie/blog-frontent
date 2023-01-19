@@ -1,4 +1,4 @@
-import ScreenShots from "./screenShots"
+import ScreenShots from "./ScreenShots"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {faCheckCircle, faCode} from '@fortawesome/free-solid-svg-icons'
 
