@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import RoundedIconButtton from '../RoundedIconButtton'
-import ScreenShot from './screenShot'
+import ScreenShot from './ScreenShot'
 import { Carousel } from 'antd'
 import { faArrowLeft, faArrowRight, faCircle } from '@fortawesome/free-solid-svg-icons'
 
