@@ -8,9 +8,7 @@ module.exports = {
         commonjs: true,
     },
     extends: [
-        'eslint:recommended',
-        'plugin:react/recommended',
-        'plugin:prettier/recommended',
+		"next/core-web-vitals"
     ],
     parserOptions: {
         ecmaFeatures: {
