@@ -7,7 +7,6 @@ export default({setOpen,open,defaultKey}) => {
   const onClose = () => {
     setOpen(false);
   };
-  console.log(setOpen)
   return (
       <Drawer width={640} placement="right" closable={false} onClose={onClose} open={open} setOpen={setOpen}>
         <DrawerTab defaultKey={defaultKey} setOpen={setOpen}/>

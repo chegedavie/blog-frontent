@@ -1,10 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import CustomLink from '../customLink'
-import { faStar, faUserGraduate } from '@fortawesome/free-solid-svg-icons'
+import {
+    faStar,
+    faUserGraduate,
+    faEnvelope,
+} from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import SocialsCloud from '../SocialsCloud'
 import LinkButton from '../LinkButton'
-import Link from 'next/link'
 
 export default () => {
     return (
@@ -14,25 +17,25 @@ export default () => {
                 backgroundImage: "url('/bg1.jpg')",
                 backgroundSize: 'cover',
             }}>
-            <div className='relative py-6 bg-indigo-900/50'>
+            <div className='relative py-6 bg-indigo-900/70'>
                 <div
                     className='grid grid-cols-2 text-gray-800'
                     style={{ zIndex: -1 }}>
-                    <div className='col-span-2 md:col-span-1 px-3 lg:px-12 py-6 lg:py-12 text-gray-900'>
-                        <h1 className='tracking-tight leading-tight banner-text'>
-                            <p className='text-3xl lg:text-4xl font-semibold text-gray-800'>
+                    <div className='col-span-2 md:col-span-1 px-4 lg:px-12 py-6 lg:py-12 text-slate-800'>
+                        <h1 className='tracking-tight leading-tight light-banner-text'>
+                            <p className='text-3xl lg:text-4xl font-semibold text-slate-800'>
                                 <FontAwesomeIcon
                                     icon={faUserGraduate}
                                     className='mr-4'
                                 />
                                 Proffesional
                             </p>
-                            <p className='text-4xl lg:text-5xl font-semibold text-indigo-700/90'>
-                                <span className='text-yellow-600/90'>Web</span>{' '}
+                            <p className='text-4xl lg:text-5xl font-semibold text-indigo-800'>
+                                <span className='text-yellow-600/90 banner-text'>Web</span>{' '}
                                 Developer
                             </p>
                         </h1>
-                        <p className='mt-6 banner-text text-indigo-50'>
+                        <p className='mt-6 banner-text text-indigo-50 text-sm md:text-base'>
                             Hi, my David Chege and I am a React developer with
                             proffiency in Laravel framework and PHP as well as
                             Tailwind CSS and Alpine Js. I am always looking for
@@ -53,13 +56,24 @@ export default () => {
                                 )
                             })}
                         </div>
-                        <div className='pt-6'>
+                        <div className='pt-6 flex gap-4'>
                             <LinkButton className='text-sm font-bold text-indigo-50 bg-indigo-700 border border-indigo-50 hover:border-indigo-900 px-6 py-2 rounded'>
                                 <FontAwesomeIcon
                                     icon={faGithub}
                                     className='fas fa-code mr-2'
                                 />
-                                <Link href='/contact'>Github</Link>
+                                <a
+                                    target='_Blank'
+                                    href='https://github.com/chegedavie'>
+                                    Github
+                                </a>
+                            </LinkButton>
+                            <LinkButton
+                                className={`text-sm font-bold text-indigo-50 disabled:pointer-disabled bg-indigo-200/10 hover:bg-indigo-200/30 focus:bg-indigo-200/30 border px-6 py-2 rounded`}>
+                                <FontAwesomeIcon icon={faEnvelope} className='mr-2'/>
+                                <a target='_Blank' href='/contact'>
+                                    Contact me
+                                </a>
                             </LinkButton>
                         </div>
                     </div>

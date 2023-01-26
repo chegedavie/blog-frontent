@@ -6,7 +6,7 @@ const Projects = (props) => {
   const { heading, portfolio, className, headingColor, bgImage } = props
   const featured = projects.slice(0, 4)
   return (
-    <div id='projects' className={`py-6 md:py-12 px-4 md:px-12 ${className}`}>
+    <div id='projects' className={`py-6 md:py-12 px-2 md:px-12 ${className}`}>
       {heading ? (
         <div
           className={` text-2xl font-bold text-center pb-8 md:pb-12 ${

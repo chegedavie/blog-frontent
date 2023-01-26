@@ -8,22 +8,23 @@ export default props => {
             <div
                 className={className}
                 style={{
-                    backgroundImage: `url("http://localhost:3000/projects/${screenShot}")`,
+                    backgroundImage: `url("/projects/${screenShot}")`,
                     backgroundSize: 'cover',
                 }}>
-				<Image
-                    width={'70%'}
-					className='h-full w-full mx-auto'
-                    src={`http://localhost:3000/projects/${screenShot}`}
+				<div className='w-4/5 mx-auto'>
+                <Image
+					className='h-full w-full'
+                    src={`/projects/${screenShot}`}
                     placeholder={
                         <Image
                             preview={false}
-                            src={`http://localhost:3000/projects/${screenShot}`}
+                            src={`/projects/${screenShot}`}
                             width={'100%'}
                             alt={description}
                         />
                     }
                 />
+                </div>
             </div>
         )
     }

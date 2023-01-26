@@ -165,7 +165,7 @@ export default function RegistrationForm({setOpen}) {
                     onChange={e => {
                         setTermsAgreement(e.target.checked)
                     }}>
-                    I have read the <a href=''>agreement</a>
+                    I have read the <a target={'_blank'} href='/terms'>agreement</a>
                 </Checkbox>
             </Form.Item>
             <Form.Item {...tailFormItemLayout}>

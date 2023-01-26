@@ -4,7 +4,6 @@ import RegisterForm from './RegisterForm'
 const TabPane = Tabs.TabPane
 
 export default ({ defaultKey,setOpen }) => {
-	console.log(setOpen)
     return (
         <Tabs defaultActiveKey={defaultKey}>
             <TabPane tab='Login' key='1' className='flex items-center'>

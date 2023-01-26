@@ -13,8 +13,6 @@ export default ({setOpen}) => {
         middleware: 'guest',
         redirectIfAuthenticated: currentPage,
     })
-	console.log(setOpen)
-	console.log(currentPage)
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')

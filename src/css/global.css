@@ -139,6 +139,9 @@ body::-webkit-scrollbar {
   .banner-text{
     text-shadow: 2px 2px 4px rgb(49 46 129);
   }
+  .light-banner-text{
+    text-shadow: 1px 1px 1px white;
+  }
   .banner-thumbnail{
     box-shadow: 4px 4px 16px rgb(49 46 129);
   }

@@ -9,12 +9,7 @@ class MyDocument extends Document {
     render() {
         return (
             <Html>
-                <Head>
-                    <link
-                        href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap"
-                        rel="stylesheet"
-                    />
-                </Head>
+                <Head></Head>
                 <body className="antialiased">
                     <Main />
                     <NextScript />
