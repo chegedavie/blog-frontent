@@ -7,7 +7,7 @@ import Head from 'next/head'
 
 let Contact = () => {
   return (
-    <Container style={{ backgroundImage:"url('/bg1.jpg')",backgroundSize:'cover' }} className=' h-screeen'>
+    <Container style={{ backgroundImage:"url('/bg1.jpg')",backgroundSize:'cover' }} className='p-0 h-screeen'>
       <Head>
         <title>Get in touch. Send me a message.</title>
       </Head>

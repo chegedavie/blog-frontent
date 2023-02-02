@@ -1,47 +1,40 @@
-import { PhoneIcon, PhoneArrowUpRightIcon } from '@heroicons/react/24/outline'
-import { faPhoneSquare, faUserCircle, faLocation, faBlenderPhone, faMobilePhone } from '@fortawesome/free-solid-svg-icons'
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faLinkedin, faSkype, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { MailOutlined } from '@ant-design/icons';
+import {} from 'antd'
+//import { faFacebook, faLinkedin, faSkype, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import SocialsCloud from '../SocialsCloud'
 export default props => {
     const { className } = props
     return (
         <div className={className}>
-            <div className='text-cente space-y-2 lg:space-y-4 px-2 py-4 md:px-2 md:py-6'>
-                <h2 className='flex items-end space-x-3 text-lg md:text-base md:font-semibold capitalize select-none contact-section-heading md:md-contact-section-heading'>
-                    <PhoneArrowUpRightIcon className='h-6 inline' />{' '}
-                    <div>Contact information</div>
+            <div className='text-cente px-8 relative'>
+                <h2 className='text-lg md:text-base md:font-semibold select-none pb-3'>
+                    <span className='text-2xl font-semibold text-slate-800'>Get in touch</span>
                 </h2>
-                <div className='w-full pt-4 pb-2'>
-                    <p className='select-none w-5/6 md:w-full md:font-semibold md:font-normal'>
-                        I'd love to have a conversation with you. Send me a
-                        message any time.
+                <div className='w-full pb-6'>
+                    <p className='select-none text-justify tracking-tight leading-tight font-normal font-sans text-base text-slate-800'>
+                        I would love to hear your thoughts! Send me an email and I will get back to you ASAP. I'm also available on socials, let's become friends! Talk to you soon.
                     </p>
                 </div>
-                <div className='space-y-2'>
-                    <p className='contact-item'>
-                        <FontAwesomeIcon
-                            icon={faUserCircle}
-                            className='text-xl mr-2 inline text-indigo-200'
-                        />
-                        David Chege
-                    </p>
-                    <p className='contact-item'>
-                        <FontAwesomeIcon
-                            icon={faLocation}
-                            className='text-xl mr-2 inline text-indigo-200'
-                        />
+                <div className='space-y-2 pb-5'>
+                    <p className=''>
                         Nakuru, Kenya.
                     </p>
-                    <p className='contact-item'>
-                        <FontAwesomeIcon
-                            icon={faMobilePhone}
-                            className='text-xl mr-2 inline text-indigo-200'
+                    <p className='flex items-end'>
+                        <FontAwesomeIcon icon={faPhone}
+                            className='text-xl mr-2 inline'
                         />
-                        +254 792775649
+                        +(254) 792775649
+                    </p>
+                    <p className='flex items-end'>
+                        <MailOutlined
+                            className='text-xl mr-2 inline'
+                        />
+                        chegenganga2@gmail.com
                     </p>
                 </div>
-                <SocialsCloud className='text-cen space-x-3 text-base' iconClassName='opacity-80 hover:opacity-100 focus:opacity-100 text-indigo-100 hover:text-teal-50 focus:text-teal-50 hover:cursor-pointer hover:cursor-pointer'/>
+                <SocialsCloud className='text-cen space-x-3 text-base' iconClassName='opacity-70 hover:opacity-100 focus:opacity-100 text-slate-800 hover:text-indigo-800 focus:text-indigo-800 hover:cursor-pointer hover:cursor-pointer'/>
             </div>
         </div>
     )

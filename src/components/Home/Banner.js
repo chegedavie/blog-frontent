@@ -35,13 +35,10 @@ export default () => {
                                 Developer
                             </p>
                         </h1>
-                        <p className='mt-6 banner-text text-indigo-50 text-sm md:text-base'>
+                        <p className='mt-6 banner-text text-left text-indigo-50 text-sm md:text-base'>
                             Hi, my David Chege and I am a React developer with
                             proffiency in Laravel framework and PHP as well as
-                            Tailwind CSS and Alpine Js. I am always looking for
-                            ways to become a better developer and I look to
-                            contribute my skills in team that will have me as I
-                            learn from them as well.
+                            Tailwind CSS and Alpine Js.
                         </p>
                         <div>
                             {[1, 2, 3, 4, 5].map((item, index) => {
@@ -84,8 +81,7 @@ export default () => {
                             <img
                                 src='/dc.png'
                                 height='240px'
-                                width='240px'
-                                className='mx-auto bg-indigo-900/10'
+                                className='mx-auto'
                             />
                             <div className='w-full'>
                                 <p className='text-center font-semibold text-base text-slate-800'>
