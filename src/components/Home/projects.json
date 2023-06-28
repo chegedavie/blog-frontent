@@ -17,7 +17,7 @@
 	"github":"https://github.com/chegedavie/blog-frontent.git",
 	"demo":{
 		"complete":true,
-		"link":""
+		"link":"https://blog-frontent-nine.vercel.app/"
 	}
 
   },
@@ -32,7 +32,7 @@
 	"github":"https://github.com/chegedavie/captions-editor",
 	"demo":{
 		"complete":true,
-		"link":""
+		"link":"https://cheges-captions-editor.onrender.com/"
 	}
   },
   {
@@ -46,7 +46,7 @@
 	"github":"https://github.com/chegedavie/upload-wizard",
 	"demo":{
 		"complete":true,
-		"link":""
+		"link":"https://chages-upload-wizard.onrender.com/"
 	}
   },
   {
