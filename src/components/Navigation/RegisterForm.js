@@ -78,6 +78,7 @@ export default function RegistrationForm({setOpen}) {
                     <Input
                         value={name}
                         onChange={event => setName(event.target.value)}
+                        className='rounded p-2'
                     />
             </Form.Item>
             <Form.Item
@@ -96,6 +97,7 @@ export default function RegistrationForm({setOpen}) {
                 <Input
                     value={email}
                     onChange={event => setEmail(event.target.value)}
+                    className='rounded p-2'
                 />
             </Form.Item>
 
@@ -112,6 +114,7 @@ export default function RegistrationForm({setOpen}) {
                 <Input.Password
                     value={password}
                     onChange={event => setPassword(event.target.value)}
+                    className='rounded p-2'
                 />
             </Form.Item>
 
@@ -143,6 +146,7 @@ export default function RegistrationForm({setOpen}) {
                     onChange={event =>
                         setPasswordConfirmation(event.target.value)
                     }
+                    className='rounded p-2'
                 />
             </Form.Item>
 
@@ -169,7 +173,7 @@ export default function RegistrationForm({setOpen}) {
                 </Checkbox>
             </Form.Item>
             <Form.Item {...tailFormItemLayout}>
-                <Button type='primary' htmlType='submit' className='text-gray-800'>
+                <Button type='primary' htmlType='submit' className='text-gray-800 rounded p-2'>
                     Register
                 </Button>
             </Form.Item>

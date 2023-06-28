@@ -15,6 +15,7 @@ export default props => {
                         <FontAwesomeIcon
                             icon={icon}
                             className={'mr-2 lg:mr-1 inline'}
+                            style={{ maxHeight: "1.2em" }}
                         />
                         <span>{value}</span>
                     </CustomLink>
@@ -26,6 +27,7 @@ export default props => {
                         <FontAwesomeIcon
                             icon={icon}
                             className={'mr-2 lg:mr-1 inline'}
+                            style={{ maxHeight: "1.2em" }}
                         />
                         <span>{value}</span>
                     </CustomLink>
@@ -43,6 +45,7 @@ export default props => {
                         <FontAwesomeIcon
                             icon={icon}
                             className={'mr-2 lg:mr-1 inline'}
+                            style={{ maxHeight: "1.2em" }}
                         />
                         <span>{value}</span>
                     </CustomLink>
@@ -54,6 +57,7 @@ export default props => {
                         <FontAwesomeIcon
                             icon={icon}
                             className={'mr-2 lg:mr-1 inline'}
+                            style={{ maxHeight: "1.2em" }}
                         />
                         <span>{value}</span>
                     </CustomLink>

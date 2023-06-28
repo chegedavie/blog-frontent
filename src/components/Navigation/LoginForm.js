@@ -58,6 +58,7 @@ export default ({setOpen}) => {
                     placeholder='Username'
                     value={email}
                     onChange={event => setEmail(event.target.value)}
+                    className='rounded p-2'
                 />
             </Form.Item>
             <Form.Item
@@ -71,6 +72,7 @@ export default ({setOpen}) => {
                     placeholder='Password'
                     value={password}
                     onChange={event => setPassword(event.target.value)}
+                    className='rounded p-2'
                 />
             </Form.Item>
             <Form.Item>
@@ -94,7 +96,7 @@ export default ({setOpen}) => {
                 <Button
                     type='primary'
                     htmlType='submit'
-                    className='login-form-button text-gray-800'>
+                    className='login-form-button text-gray-800 p-2'>
                     Log in
                 </Button>
             </Form.Item>
