@@ -31,7 +31,7 @@ export const apiSlice = createApi({
     reducerPath: 'api',
 
     baseQuery: fetchBaseQuery({
-        baseUrl: process.env.NEXT_PUBLIC_BACKEND_URL,
+        baseUrl: 'https://code-with-chege-backend.onrender.com/api',
         credentials: 'include',
         prepareHeaders: async headers => {
             const { csrfToken } = await getCsrfToken()
